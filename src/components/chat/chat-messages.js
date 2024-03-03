@@ -70,7 +70,6 @@ const ChatMessages = ({ userInfo }) => {
 
 
     console.log("test ======>" ,  data)
-    // console.log("Tes2t ===> " , chatData)
 
     return  (
         <div className="h-3/4 flex items-end mx-3 overflow-y-auto scrollbar-hidden scroll-smooth relative">

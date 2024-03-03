@@ -107,10 +107,12 @@ const ChatInput = ({ userInfo }) => {
             nickname: user?.nickname,
             langague: userInfo?.national_language,
             channelId,
+            profileImage: user?.userImgPath,
             type: "TEXT",
+
         }));
         sendMessageRef.current.value = "";
-    }, [channelId, isConnected, socket, userInfo]);
+    }, [channelId, isConnected, socket, userInfo, user]);
 
 
     return (

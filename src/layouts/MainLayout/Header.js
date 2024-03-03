@@ -16,7 +16,6 @@ function Header() {
   const userId = userInfo.sub;
 
     const { onOpen } = useModal();
-    const imageUrl = "./test.png";
     const [serverList, setServerList] = useState([]);
     const [onRequest, setOnRequest] = useState(false);
     const { state } = useLocation()
@@ -167,7 +166,7 @@ function Header() {
                     className="h-8 w-8 md:h-8 md:w-8 mr-2"
                     onClick={() => onOpen("members")}
                 >
-                    {data.userImgPath ? <UserAvatar src={data.userImgPath} />  : <UserAvatar src={imageUrl} />}
+                    {data.userImgPath ? <UserAvatar src={data.userImgPath} />  : <UserAvatar />}
                 </div>
                 <div onClick={onClickTest} style={{ margin: "0px 20px 0px 10px" }} className="text-zinc-300">{data.nickname}</div>
                 <Button onClick={() => onOpen("logout")} className="w-[80px] h-[30px] bg-[#51CBB6] hover:bg-[#45B2A5] font-bold">

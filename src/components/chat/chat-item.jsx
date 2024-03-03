@@ -1,7 +1,7 @@
 import {cn} from "src/lib/utils";
 import {UserAvatar} from "../user-avatar";
 import moment from "moment";
-import {useMemo, useState} from "react";
+import { useMemo, useState} from "react";
 import {decodeJwt} from "src/lib/tokenUtils";
 import {Button} from "src/components/ui/button";
 import axios from "axios";
@@ -86,13 +86,14 @@ const ChatItem = ({chat, channel, name}) => {
 
                 <div className="group flex gap-x-2 items-start w-full">
                     <div className="hover:drop-shadow-md transition mt-2 mx-2">
-                        {chat.sender.userImgPath ?
+                        {/* {chat.sender.userImgPath ?
                             <UserAvatar src={ chat.sender.userImgPath }/>
                             :
                             <div >
-                                <User className={"text-teal-300 border-none"}/>
+                                <UserAvatar src={ chat.profileImage }/>
                             </div>
-                        }
+                        }  */}
+                        <User />
                     </div>
                     <div className="flex flex-col w-full">
                         <div className="flex items-center gap-x-2">
