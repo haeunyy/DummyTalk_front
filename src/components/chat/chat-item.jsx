@@ -1,5 +1,4 @@
 import {cn} from "src/lib/utils";
-import {UserAvatar} from "../user-avatar";
 import moment from "moment";
 import { useMemo, useState} from "react";
 import {decodeJwt} from "src/lib/tokenUtils";
